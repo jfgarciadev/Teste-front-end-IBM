@@ -5,5 +5,4 @@ const useQuery = (queryName: any) => {
     return new URLSearchParams(location).get(queryName);
 }
 
-
 export default useQuery;
