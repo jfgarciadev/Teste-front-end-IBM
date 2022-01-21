@@ -3,7 +3,7 @@ import axios from 'axios';
 export default {
     searchBooks: function (query: string, offset: number = 0, limit: number = 20) {
         
-        return axios.get(`https://www.googleapis.com/books/v1/volumes?q=${query}&maxResults=${limit}&filter=full&printType=books&offset=${offset}`);
+        return axios.get(`https://www.googleapis.com/books/v1/volumes?q=${query}&maxResults=${limit}&filter=full&offset=${offset}`);
     },
     getBook: function (id:number ) {
         return axios.get(`https://www.googleapis.com/books/v1/volumes/${id}`);

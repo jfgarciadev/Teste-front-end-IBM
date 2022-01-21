@@ -1,6 +1,3 @@
-
-import { useEffect } from 'react';
-import { default as Books } from '../services/books';
 import { useNavigate } from "react-router-dom";
 
 function Book(props: any) {
