@@ -1,0 +1,19 @@
+.home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+
+
+    .SearchBar{
+        input{
+            padding: 10px;
+            min-width: 400px;
+            font-size: medium;
+            text-align: center;
+        }
+        
+    }
+}
