@@ -4,7 +4,6 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
-
     .LogoText {
         font-size: 54px;
         color: rgb(145, 144, 144);
@@ -15,8 +14,6 @@
             color: rgb(240, 92, 92);
         }
     }
-
-
     .SearchBar{
         input{
             padding: 10px;
@@ -38,6 +35,5 @@
             margin-left: 10px;
             cursor: pointer;
         }
-        
     }
 }

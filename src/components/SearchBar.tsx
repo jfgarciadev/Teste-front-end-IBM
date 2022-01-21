@@ -17,7 +17,13 @@ function SearchBar() {
             <div>
                   <input type="text" placeholder="Search..." onChange={e => {
                         setSearch(e.target.value);
-                  }} />
+                  }}
+                        onKeyPress={e => {
+                              if (e.key === 'Enter') {
+                                    searchHandler();
+                              }
+                        }}
+                  />
                   <button onClick={() => {
                         searchHandler();
                   }}>Search</button>

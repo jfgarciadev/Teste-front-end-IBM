@@ -3,7 +3,7 @@ import { useEffect } from 'react';
 import { default as Books } from '../services/books';
 import { useNavigate } from "react-router-dom";
 
-function SearchBar(props: any) {
+function Book(props: any) {
     const book = props.book;
     const styles = props.styles;
 
@@ -39,13 +39,6 @@ function SearchBar(props: any) {
                         <p><strong>Author: </strong>{book.volumeInfo.authors}</p>
                         <div>
                             <button className={styles.button} onClick={() => {
-                                Books.saveFavoriteBooks(book);
-                                console.log(Books.getFavoriteBooks());
-                            }}>Add to my books</button>
-                            <button className={styles.button} onClick={() => {
-                                window.open(book.accessInfo.webReaderLink, '_blank');
-                            }}>Read</button>
-                            <button className={styles.button} onClick={() => {
                                 goToBook(book.id);
                             }}>More info</button>
                         </div>
@@ -59,6 +52,6 @@ function SearchBar(props: any) {
     );
 }
 
-export default SearchBar;
+export default Book;
 
 

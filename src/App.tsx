@@ -6,7 +6,7 @@ import { Routes, Route, Link } from "react-router-dom";
 import Search from './screens/Search';
 import Home  from './screens/Home';
 import Book  from './screens/Book';
-
+import MyBooks  from './screens/MyBooks';
 function App() {
 
 
@@ -16,6 +16,7 @@ function App() {
         <Route path="/" element={ <Home /> } />
         <Route path="/search" element={ <Search /> } />
         <Route path="/book" element={ <Book /> } />
+        <Route path="/mybooks" element={ <MyBooks/> } />
       </Routes> 
     </div>
   );

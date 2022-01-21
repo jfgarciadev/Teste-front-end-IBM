@@ -8,7 +8,6 @@ function Home() {
         <div className={styles.SearchBar} >
             <SearchBar />
         </div>
-        
     </div>
   );
 }
