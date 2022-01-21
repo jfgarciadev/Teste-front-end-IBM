@@ -5,6 +5,16 @@
     align-items: center;
     height: 100vh;
 
+    .LogoText {
+        font-size: 54px;
+        color: rgb(145, 144, 144);
+        text-transform: uppercase;
+        font-weight: lighter;
+        margin-bottom: 70px;
+        span{
+            color: rgb(240, 92, 92);
+        }
+    }
 
 
     .SearchBar{
@@ -13,6 +23,20 @@
             min-width: 400px;
             font-size: medium;
             text-align: center;
+            border-radius: 10px;
+            border: 1px solid #ccc;
+        }
+        button{
+            padding: 10px;
+            min-width: 100px;
+            font-size: medium;
+            text-align: center;
+            border-radius: 10px;
+            border: 1px solid #ccc;
+            background-color: #ccc;
+            color: #000;
+            margin-left: 10px;
+            cursor: pointer;
         }
         
     }

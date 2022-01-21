@@ -1,12 +1,14 @@
 function SearchBar() {
 
 
-    return (
-      
-          <input type="text" placeholder="Search..." />
-      
-    );
-  }
-  
-  export default SearchBar;
-  
+      return (
+            <div>
+                  <input type="text" placeholder="Search..." />
+                  <button>Search</button>
+            </div>
+
+
+      );
+}
+
+export default SearchBar;
