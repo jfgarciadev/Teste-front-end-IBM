@@ -1,0 +1,149 @@
+.search{
+    display: flex;
+    max-width: 1046px;
+    margin: 0 auto;
+    flex-direction: column;
+    a{
+        text-decoration: none;
+    }
+    .LogoText {
+        font-size: 54px;
+        color: rgb(145, 144, 144);
+        text-transform: uppercase;
+        font-weight: lighter;
+        margin-bottom: 20px;
+        span{
+            color: rgb(240, 92, 92);
+        }
+        text-decoration: none;
+
+    }
+    .header{
+        padding-top: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        h1{
+            margin-top: 0px;
+            font-size: 30px;
+            color: rgb(112, 78, 235);
+            width: 100%;
+            text-transform: uppercase;
+            font-weight: lighter;
+            text-align: left;
+            margin-bottom: 10px;
+            overflow: hidden;
+            box-sizing: content-box;
+            max-lines: 3;
+            
+        }
+        .SearchBar{
+            div{
+                display: flex;
+                justify-content: space-between;
+            }
+            input{
+                padding: 5px;
+                min-width: 200px;
+                font-size: medium;
+                text-align: center;
+                border-radius: 10px;
+                border: 1px solid #ccc;
+            }
+            button{
+                padding: 5px;
+                min-width: 50px;
+                font-size: medium;
+                text-align: center;
+                border-radius: 10px;
+                border: 1px solid #ccc;
+                background-color: #ccc;
+                color: #000;
+                margin-left: 10px;
+                cursor: pointer;
+            }
+            
+        }
+    }
+    .book{
+        padding: 0 20px;
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 20px;
+        .row{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin-bottom: 0px;
+
+            img{
+                margin: auto 20px auto 0;
+                
+                max-height: 190px;
+            }
+            .content{
+                display: flex;
+                flex: 1;
+                flex-direction: column;
+                
+                align-items: center;
+                h1{
+                    margin-top: 0px;
+                    font-size: 20px;
+                    color: rgb(112, 78, 235);
+                    width: 100%;
+                    text-transform: uppercase;
+                    font-weight: lighter;
+                    text-align: left;
+                    margin-bottom: 10px;
+                    overflow: hidden;
+                    box-sizing: content-box;
+                    max-lines: 3;
+                    
+                }
+                p{  
+                    text-align:  justify;
+                    margin-top: 0px;
+                    padding-top: 0px;
+                    font-size: 14px;
+                    color: rgb(145, 144, 144);
+                    text-transform: uppercase;
+                    margin-bottom: 5px;
+                    overflow: hidden;
+                    box-sizing: content-box;
+                    max-lines: 3;
+                }
+                .row{
+
+                    margin-top: auto;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: flex-end;
+                    justify-content: space-between;
+                    width: 100%;
+                    .button{
+                        padding: 5px;
+                        min-width: 100px;
+                        font-size: 14px;
+                        text-align: center;
+                        border-radius: 10px;
+                        border: 1px solid #ccc;
+                        background-color: rgb(156, 140, 214);
+                        color: rgb(255, 255, 255);
+                        margin-left: 10px;
+                        cursor: pointer;
+                    }
+                }
+            }
+            
+        }
+        
+    }
+    .pageButton{
+        
+        margin: 10px 2px;
+    }
+}
