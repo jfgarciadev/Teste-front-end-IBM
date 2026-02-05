@@ -1,0 +1,19 @@
+# Woodpecker CI pipeline for React app
+
+pipeline:
+  install:
+    image: node:18
+    commands:
+      - npm ci
+  lint:
+    image: node:18
+    commands:
+      - npm run lint || echo "No lint script defined"
+  test:
+    image: node:18
+    commands:
+      - npm test -- --watchAll=false
+  build:
+    image: node:18
+    commands:
+      - npm run build
