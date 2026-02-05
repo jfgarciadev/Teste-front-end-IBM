@@ -1,6 +1,6 @@
 # Woodpecker CI pipeline for React app
 
-pipeline:
+steps:
   install:
     image: node:18
     commands:
