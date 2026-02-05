@@ -1,5 +1,7 @@
-generate-version-file:
+# O Woodpecker exige que todos os passos fiquem sob a chave 'steps'
+steps:
+  # Aqui você define o nome do seu passo (sem espaços no nome)
+  generate-version-file:
     image: node:18
     commands:
-      # Usamos um pequeno script em linha para ler o JSON e criar o arquivo
       - node -e "const fs = require('fs'); const pkg = JSON.parse(fs.readFileSync('package.json')); fs.writeFileSync('version.txt', pkg.version); console.log('Versão salva:', pkg.version);"
